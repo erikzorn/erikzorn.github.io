@@ -1,0 +1,155 @@
+body {
+    background-color: #000;
+}
+.img-responsive {
+	 margin: 0 auto;
+}
+#bio {
+	padding:20px 100px 20px 100px;
+	margin: 0 auto;
+	text-align:left;
+}
+#contact {
+	padding:20px 100px 20px 100px;
+	margin: 0 auto;
+	
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    color: white;
+  }
+	
+
+#content {
+	padding:75px 100px 40px 100px;	<!-- top, right, bottom, left -->
+}
+p {
+	color:white;
+	padding: 0;
+}
+li {
+	color: white;
+}
+a:link {
+	color: #94d1cf;
+}
+a:visited {
+	color: #94d1cf;
+}
+a:hover {
+	color: #bbf9f7;
+}
+
+#projects {
+	padding: 10px 10px 10px 10px;
+	<!--border: 2px solid white;-->
+}
+
+.project {
+	padding: 10px 55px 10px 55px;
+	border: 2px solid white;
+	border-bottom: 0px solid white;
+	overflow: hidden;
+}
+	
+
+#resume {
+	padding: 10px 50px 10px 50px;
+	color:white;
+}
+h1 {
+	<!-- padding: 10px 0px 0px 25px;-->
+	color: white;
+	font-size: 200%;
+}
+h2 {
+	margin-left: 20px;
+	font-size: 130%;
+
+}
+#icons {
+	text-align:center;
+	padding: 20;
+}
+<!--#countries {
+    height: 300px; /*your fixed height*/
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; /*3 in those rules is just placeholder -- can be anything*/
+}
+#countries li {
+    display: inline-block; /*necessary*/
+}-->
+#contact {
+	color:white;
+}
+@media (max-width: 980px) {	
+  	body {
+      padding-top: 0px;
+    }
+}
+@media (max-width: 700px) {	
+  	p {
+      padding-top: 0px;
+    }
+}
+@media (max-width: 768px) {
+      .navbar-nav {
+        display: none;
+      }
+      .selectpicker{
+		display:block;
+		float:right;
+		}
+	      
+    }
+@media (min-width: 768px) {
+      .navbar-nav {
+        display: block;
+      }
+      .selectpicker{
+      	display: none;
+      }
+    }
+.navbar-custom {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #94d1cf
+;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+.navbar-brand {
+	color: white;
+	float:left;
+}
+
+.navbar-custom .navbar-nav > .active > a, .navbar-custom .navbar-nav > .active > a:focus {
+	<!--color: blue; /*BACKGROUND color for active*/-->
+	background-color: #94d1cf;
+}
+.navbar-custom .navbar-nav > .active{
+	color: #000;
+	background: #94d1cf;
+ }
+
+.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
+	background-color: #94d1cf
+	;  /*Sets the text hover color on navbar*/
+}
+#divider {
+ 	clear: both;
+ 	font-size: 250%;
+ 	color: white;
+ 	height: 50px;
+ 	text-align: center;
+ 	background-color: #94d1cf;
+}
+#footer {
+ 	clear: both;
+ 	color: white;
+ 	text-align: right;
+ 	background-color: #94d1cf;
+}

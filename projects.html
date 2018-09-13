@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>Erik Zorn</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+	<nav class="navbar navbar-custom navbar-fixed-top">
+  		<div class="container-fluid">
+			<div class="navbar-header">
+	  			<a class="navbar-brand" href="index.html">Erik C. Zorn</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+	 			<li><a href="index.html">Home</a></li>
+	  			<li class="active"><a href="projects.html">Projects</a></li>
+	  			<li><a href="resume.html">Resume</a></li>
+	  			<li><a href="contact.html">Contact</a></li>
+			</ul>
+  		</div>
+	<select class="selectpicker show-tick" onchange="location = this.options[this.selectedIndex].value;" style="float:right"> 
+    			<option value="index.html" selected="index.html">Home</option> 
+    			<option value="projects.html">Projects</option> 
+    			<option value="resume.html">Resume</option> 
+    			<option value="contact.html">Contact</option> 		
+  		</select>
+  	
+	</nav>
+	<div id="content">
+	<img class="img-responsive" src="images/bannerWeb.png" alt="ID">
+	</div>
+	<div id="divider">
+		Projects
+	</div>
+	<div id="projects">
+		<div class="project">
+			<div style="float:left;margin-top: 50px">
+			<h1><a href="https://github.com/erikzorn/GMbot" target="_blank">Clever GroupMe Bot</a></h1>
+			
+		
+					<p style="padding: 20px 30px 10px 30px;float:left;width:400px">
+						This is a javascript/nodeJS program modified from an existing Group Me <a href="https://github.com/groupme/bot-tutorial-nodejs" target="_blank">repository</a>. I modified the codebase to allow the bot to identify any message sent into the chat, read the content, and use the CleverBot API to generate a smart response. Chat dialogues can be seen to the right. This application is deployed to Heroku.
+					</p>
+			</div>
+					<img class="img-responsive" src="images/gmbot1.png"  style="width:300px;padding:0px 0px 0px 25px;margin-right: 80px; float:right" alt="votes_app">
+					<img class="img-responsive" src="images/gmbot2.png"  style="width:300px; padding:0px 0px 0px 25px; float:right" alt="votes_app">
+		</div>
+		<!-- <div id="congress"> -->
+		<div class="project">
+			<div style="float:left;margin-top: 10px">
+			<h1><a href="https://github.com/erikzorn/votes_app" target="_blank">Votes App</a></h1>
+			
+		
+					<p style="padding: 0px 30px 10px 30px;float:left;width:400px">
+					Django App that aggregates the last 10 bills voted on by a congress member according to a zip code. Information is displayed into
+					3 columns: Bill Title, Bill Description, and Member Position. <br> (disclaimer: zip codes are used
+					for simplicity in this app and are not exact when determining the congressional representatives by location.)<br><br>
+					<a href="http://congressional-votes-app.herokuapp.com/" target="_blank">Click Here for Live App</a></p>
+			</div>
+					<img class="img-responsive" src="images/votes_app_screenshot.png"  style="width:500px;float:right;margin: 20px 100px 20px 20px" alt="votes_app">
+		
+		</div>
+		<!-- <div id="gAssembler"> -->
+		<div class="project">
+			<h1><a href="https://github.com/erikzorn/GeneAssembler" target="_blank">Gene Assembler</a></h1>
+		
+					<p style="padding: 0px 30px 10px 30px">C++ program that uses file I/O to take in text files of thousands of ACTG genetic sequences 
+						and condenses them into one contiguous string resembling a gene. Appending is based on 20 
+						character overlaps between consecutive strings. Program uses custom string class.</p>
+					<img class="img-responsive" src="images/geneAssembly.gif"  alt="Gene">
+		</div>
+		<!-- <div id="konigsberg"> -->
+		<div class="project">
+			<h1><a href="https://github.com/erikzorn/KonigsbergBridgeProblem" target="_blank">Konigsberg Bridge Problem</a></h1>
+					<p style="width:400px;float:left;padding: 0px 0px 10px 30px">The Konigsberg Bridge Problem is to find a way to travel each bridge only once and travel every bridge. You may begin on any island. This is an impossible 
+						task and this Java code shows this by traveling every single path possible. This is executed by representing the islands as vertices and the bridges as edges
+						of a graph. A recursive loop is implemented to solve this problem and the paths are stored in ArrayLists to keep track of the paths taken. This program writes
+						out each path taken and the number of bridges traveled. This number never reaches 7 proving that the task is impossible.</p>
+						<img class="img-responsive" src="images/bridges.jpeg" alt="Bridges" >
+		</div>
+		<!-- <div id="mst"> -->
+		<div class="project" style="border-bottom-width: 2px">
+			<h1><a href="https://github.com/erikzorn/MinimumSpanningTree" style="clear: both;" target="_blank">
+				Minimum Spanning Tree</a>
+			</h1>
+			<p style="padding: 0px 30px 10px 30px">Java program to find the minimum spanning tree of an 
+				undirected graph data structure using Prim's and Kruskal's Algorithms.</p>
+			<ul>
+				<li type="disc" style="width:400px;float:left; padding:50px 0px 50px 20px">Kruskal's Algorithm 
+						finds the minimum spanning tree of the graph by starting with the edge of the least weight and it 
+						continues choosing the smallest edge available without creating a cycle until all vertices have 
+						been visited. (Illustrated to the right)
+				</li>
+				<img class="img-responsive" src="images/graphAnime.gif" style="float:right; padding:10px 100px 10px 0px;" alt="kruskals">
+				<li type="disc" style="width:400px;float:left; padding:50px 0px 50px 20px">Prims' Algorithm
+						finds the minimum spanning tree in a graph by starting with an arbitrary vertice then moving along
+						the lightest edge to the next vertice. From there it picks the lightest edge connected to one of the vertice
+						that have been already traveled to. It continues this process without picking edges that cause loops or cycles
+						until all vertices are traveled to. (Illustrated to the right)
+				</li>
+				<img class="img-responsive" src="images/primsGraph.gif" style="float:right; padding:10px 100px 10px 0px;" alt="prims">
+			</ul>
+		</div>
+	</div>
+	<div id="icons">
+		<td>
+			<a href="mailto:erik.zorn44@gmail.com" title="email"><i class="fa fa-envelope" style="font-size:30px;color:white;"></i></a>&emsp;&emsp;
+			<a href="https://www.linkedin.com/in/erik-zorn" title="linkedin" target="_blank"><i class="fa fa-linkedin" style="font-size:30px;color:white;"></i></a>&emsp;&emsp;
+			<a href="https://github.com/erikzorn" title="gitHub" target="_blank"><i class="fa fa-github" style="font-size:30px;color:white;"></i>
+		</td>
+	</div>
+	<div id="footer">
+		Copyright &copy; 2016 Erik Zorn&emsp;
+	</div>
+	
+	
+	</body>
+</hmtl>
